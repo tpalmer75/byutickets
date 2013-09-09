@@ -1,0 +1,32 @@
+extends _layout
+
+block breadcrumb
+
+block content
+
+	h1 Men's Baseball
+		a.btn.btn-primary.btn-large.get-tickets(href='http://ev9.evenue.net/cgi-bin/ncommerce3/SEGetEventList?groupCode=FS&linkID=byu&shopperContext=&caller=&appCode=') Get Tickets
+
+	//- =============
+	//-  Tabs
+	//- =============
+	
+	ul.nav.nav-tabs
+		li 
+			a(href='#info', data-toggle="tab") Info
+		li
+			a(href='#schedule', data-toggle="tab") Schedule
+		li
+			a(href='#seating', data-toggle="tab") Seating
+		li
+			a(href='#venue', data-toggle="tab") Venue
+
+	div.tab-content
+		div#info.tab-pane.active
+			p Info 
+		div#schedule.tab-pane
+			p Schedule
+		div#seating.tab-pane
+			p Seating
+		div#venue.tab-pane
+			p Venue

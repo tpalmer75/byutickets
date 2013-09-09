@@ -233,18 +233,6 @@ $sidePadding:5px;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 /*** Navigation ***/
 .nav-container {
   a {
@@ -340,6 +328,9 @@ nav.sidebar {
 }
 
 
+//Tickets Button
+
+
 
 // Slider
 #feature {
@@ -369,6 +360,12 @@ nav.sidebar {
   }
 }
 
+//Get Tickets Buttons
+
+.get-tickets {
+  text-transform:uppercase;
+  float: right;
+}
 
 
 // Breadcrumb

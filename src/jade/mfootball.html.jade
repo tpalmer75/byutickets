@@ -1,0 +1,88 @@
+extends _layout
+
+block breadcrumb
+
+block content
+
+	h1 Football
+		a.btn.btn-primary.btn-large.get-tickets(href='http://ev9.evenue.net/cgi-bin/ncommerce3/SEGetEventList?groupCode=FS&linkID=byu&shopperContext=&caller=&appCode=') Get Tickets
+
+	//- =============
+	//-  Tabs
+	//- =============
+	
+	ul.nav.nav-tabs
+		li.active 
+			a(href='#info', data-toggle="tab") Info
+		li
+			a(href='http://byucougars.com/schedule/m-football') Schedule
+		li
+			a(href='#seating', data-toggle="tab") Seating
+		li
+			a(href='lavelledwardsstadium.html') Venue
+
+	div.tab-content
+		div#info.tab-pane.active
+			p
+				b Season
+			p During initial sales, new technology enables individuals to select their own season locations beginning at unique times based on Cougar Club membership (see Cougar Club), then on priority points. All seats are reserved. Children age two and older require a ticket. Designated donor and endzone locations are renewable. 
+				b Cougar Club members receive priority seating on the sideline with assignments and limits based principally on Cougar Club level then points:
+			li 1 point for each dollar donated to the Cougar Club
+			li 100 points for each year of continuous season ticket purchase for football and men's basketball
+			li 500 points for each Easy Club seat ever purchased (Football)
+			li 1000 points for each Legacy Club seat ever purchased (Football)
+			li 1000 points for each Courtside seat ever purchased (Men's Basketball)
+			br
+			table
+				tr
+					td Date
+					td Priority
+					td Process
+				tr
+					td April 16-June 6
+					td Cougar Club
+					td To order online, Cougar Club members will need to sign in first by clicking 
+						a(href='http://ev9.evenue.net/cgi-bin/ncommerce3/EVExecMacro?linkID=byu&evm=myac&entry=MyAccount.html&url=https%3A//ev9.evenue.net/cgi-bin/ncommerce3/EVExecMacro') here. 
+						p Cougar Club members will be notified June 7 if they receive tickets.
+				tr
+					td June 10
+					td 2013 Season Ticket Holders
+					td 
+				tr
+					td June 17
+					td Public
+					td 
+		div#schedule.tab-pane
+			p Schedule
+		div#seating.tab-pane
+			p 	
+				a(href='http://www.seats3d.com/ncaa/brigham_young_university/football/#/level_1/') See 3d view from seat.
+				br
+				br
+				img(src="http://byutickets.com/sites/default/files/images/pages/F13_chart_0.gif")
+		div#venue.tab-pane
+			p Venue
+
+//-	===============
+//-	FOOTER
+//-	===============
+block footer
+	footer#page-footer(role='contentinfo')
+		#footer-links
+			.wrapper
+				.col.alpha
+					h2 Related Links
+					a(href='http://byucougars.com') Athletics
+					a(href='http://cougarclub.com') Cougar Club
+					a(href='byubookstore.com') Online Store
+					a(href='#') Directory
+
+		#footer-bottom
+			.wrapper
+				p
+					a#lds(href='http://lds.org/') The Church of Jesus Christ of Latter-day Saints
+					a#byui(href='http://byui.edu/') BYU-Idaho
+					a#byuh(href='http://byuh.edu/') BYU-Hawaii
+					a#ldsbc(href='http://www.ldsbc.edu/') LDS Business College
+			//
+				| CONTENT END
