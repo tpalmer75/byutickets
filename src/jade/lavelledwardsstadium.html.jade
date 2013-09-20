@@ -3,18 +3,92 @@ extends _layout
 block breadcrumb
 
 block content
-	h1(style='text-align=center;') LaVell Edwards Stadium
+	h1(style='text-align: center;') LaVell Edwards Stadium
 	p
-		img(src='images/lavelledwardsstadium_photo.png')
+		img(src='images/lavelledwardsstadium_photo.jpg')
 
 
 	#wrapper(style='width:100%;float:left;display:block;')
-		#left(style='background-color:transparent;height:100px;float:left;width:50%;')
-			h1 Menu
-		#right(style='background-color:transparent;height:100px;float:left;width:50%;')
-			p
+		#left(style='background-color:transparent;height:100%;float:left;width:30%;margin: 20px 20px 20px 0px;')
+			ul.nav.nav-tabs.nav-stacked
+				li
+					a(href='#seating', data-toggle="tab") Seating
+				li
+					a(href='#directions', data-toggle="tab") Directions
+				li
+					a(href='#parking', data-toggle="tab") Parking
+				li
+					a(href='#facilitypolicies', data-toggle="tab") Facility Policies
+				li
+					a(href='http://mcspecialevents.com/eventstaff/LVESGonlinepdf.pdf') Guest Guide
+				li
+					a(href='http://mcspecialevents.com/eventstaff/EAG.pdf') Accessibility
+				li
+					a(href='http://dining.byu.edu/concessions//maps/mens_football_map.pdf') Concessions
+				li
+					a(href='http://byucougars.com/facilities/football') Facts
+		#right.tab-content(style='background-color:transparent;height:100%;float:right;width:65%;margin-top: 20px')
+			div#seating.tab-pane.active
+				p 
+					img(src='images/lavelledwardsstadium_seating_chart.gif')
+					br
+					br
+					a(href='http://www.seats3d.com/ncaa/brigham_young_university/football/#/level_1/') See 3D view from seat.
+			div#directions.tab-pane
+				b Lavell Edwards Stadium (1700 N Canyon Rd in Provo)
 				br
 				br
+				p
+					b From Salt Lake City (north): 
+				p Heading south on I-15, get off the freeway at Exit No. 269 (University Parkway). Turn left at the street light. Stay on this same road proceeding east until you reach the facilities. This road will take you past the University Mall in Orem and into Provo. The LaVell Edwards Stadium is located on the corner of University Parkway and Canyon Road.
+				p Optional routes include exiting I-15 at 800 North or Center Street in Orem, (thus avoiding the University Parkway exit which tends to have more traffic) traveling east toward the mountain and finally making a RIGHT turn onto Highway 189/University Avenue. From University Avenue, make a left at University Parkway (1650 North). The LaVell Edwards Stadium is located on the corner of University Parkway and Canyon Road. 
+				p
+					b From St. George (south):
+				p Heading north on I-15, get off the freeway at Exit No. 263 (University Avenue) in Provo. Drive north on University Avenue until you reach University Parkway (1650 North). Turn right. The LaVell Edwards Stadium is located on the corner of University Parkway and Canyon Road.
+			div#parking.tab-pane
+				p
+					img(src='images/lavelledwardsstadium_parking.gif')
 				br
-				| Info here
+				br
+				p
+					b Cougar Club Parking
+					|  (Bronze level and above) is located in Areas 1, 2, 3, 5.
+				ul
+					li All reserved parking lots will be held for pass holders until half time of each game.
+					li Passes are permits for the specified lot only.
+					li Replacement fee for lost passes is $25.
+				b State-issued Disability Parking
+				p Disability Parking is available in Lot 2A to anyone with a state-issued disability permit or license plate. Disability Parking in other lots is open only to those who qualify for that lot. Select for information on acquiring state-issued parking.
+				br
+				b Bycicle & Motorcycle Parking
+				p Select for parking map.
+				br
+				b RV Parking
+				p RV parking is located at 2230 N 150 E, Provo, and is by reservation. Please contact Campus Scheduling to reserve parking for your RV. Large groups may use Lot 37, north of the Indoor Practice Facility. RV’s may not park in Lot 37. Select for the policy on parking oversized vehicles on campus. Select for RV parking layout.
+				br
+				b Bus Services
+				p 
+					a(href='http://www.rideuta.com/') UTA Website
+				br
+				b Public Parking
+				p Public non-reserved parking lots are available at such places as the Marriott Center, Monte Bean Museum, the northwest corner of Lot #5, and the BYU administration building. Select for campus parking map.
+				br
+				b Tailgating
+				p Individuals are allowed to tailgate as long as it does not take additional stalls and/or block the travel lanes. Tailgating activities may occur directly behind or in front of one's vehicle. RV parking is located at 2230 N 150 E, Provo and is by reservation. Please contact Campus Scheduling (801-422-3134) to reserve parking for your RV. Large groups may use Lot 37, north of the Indoor Practice Facility. RV’s may not park in Lot 37. Select for the policy on parking oversized vehicles on campus. Select for RV parking layout. For safety reasons, the use of charcoal or open flame (wood) is not allowed. One may use propane grills.
+				br
+				p 
+					a(href='http://alumni.byu.edu/s/1085/03-provo-alumni/templates/interior.aspx?sid=1085&gid=7&pgid=4342&cid=9436&post_id=0') There is a modified tailgating policy specifically for Lot 20 (north of BYU Broadcasting, 600 E University Parkway). Click here for information.
+				br
+				img(src='images/lavelledwardsstadium_tailgate.gif')
+
+			div#facilitypolicies.tab-pane
+				p Facility Policies
+			div#guestguide.tab-pane
+				p Guest Guide
+			div#accessibility.tab-pane
+				p Accessibility
+			div#concessions.tab-pane
+				p Concessions
+			div#facts.tab-pane
+				p Facts
 
