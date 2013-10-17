@@ -1,0 +1,129 @@
+/* --------------------------------------
+                BASIC
+----------------------------------------*/
+
+body {
+	background: #131313 url('img/carbon_fibre.png');
+}
+
+#wrap {
+	background-color:transparent;
+}
+
+#content {
+	background:#FFF;
+}
+
+
+
+/*-----------------------------------
+               HEADER
+-------------------------------------*/
+
+#sticky-ribbon {
+	background: url('img/header-bg.svg');
+}
+
+#sticky-header-wrap {
+	background: url('img/byutickets.svg') no-repeat left center;
+}
+
+
+
+/*-----------------------------------
+                  BODY
+-------------------------------------*/
+
+a.grpButton:link{
+	display: block;
+	background:#025;
+	line-height: 50px;	
+	font-size: 17px;
+	font-weight: bold;
+	text-align: left;
+	text-decoration: none;
+	text-transform:none;
+	color: #FFF;	
+	padding:0px;
+	margin-bottom:7px;
+	padding-left:10px;
+	width: 420px;
+	height:50;
+	font-weight: 400;
+	border: 1px solid #114477;
+	-webkit-border-radius: 4px;
+ 	-moz-border-radius: 4px;
+ 	border-radius:4px;
+}	
+
+a.grpButton:hover {
+	display: block;
+	background:#147;	
+	color: #FFF;
+}	
+
+a.grpButton:active, a.grpButton:visited{
+	display: block;
+	background:#025;
+	line-height: 50px;	
+	padding-left: 10px;
+	font-size: 17px;
+	font-weight: bold;
+	text-transform:none;
+	text-decoration: none;
+	color: #FFF;	
+	text-transform: ;		
+	margin: 5px 0;	
+}
+
+
+#ttID{
+	font:12px Arial, Helvetica, sans-serif;	
+	margin:0 0 0 10px;
+	width:250px;
+	padding: 10px;
+	padding-left:20px;
+	background:rgba(255,255,255,1);
+	border:1px solid #999999;
+	color: #000;
+	z-index: 999 !important;
+	position: absolute;
+	font-weight: normal;
+	-webkit-border-radius: 4px;
+ 	-moz-border-radius: 4px;
+ 	border-radius:4px;
+ }	
+	
+#ttID big{ color:#00;font-weight: bold;}
+#ttID p{ margin:0 0 .5em 0;}		
+#ttID a:link{color:#147;}
+#ttID a:active{color:#025;}
+#ttID a:visited{color:#025;}
+#ttID a:hover{color:#147;}
+
+#imgHolder {
+	background:#025;
+	padding:7px;
+}
+
+
+
+/*----------------------------------
+      USC TROJAN SPECIFIC CODE
+ ---------------------------------*/
+
+h2#school-logo a {     /*Trojans Logo*/
+	display: none;
+}
+
+#logo-drop {
+	display:none;
+}
+
+#miniContainer {
+	display:none;
+}
+
+#superleader-wrapper {
+	display:none;
+}
